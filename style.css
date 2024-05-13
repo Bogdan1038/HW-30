@@ -1,0 +1,57 @@
+.block{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border: 2px solid  black;
+    margin: 0 auto;
+    animation: bc 5000ms ease-in-out 500ms infinite  ;
+}
+@keyframes bc {
+    0% {
+        top: 30vh;
+        left: 27vw;
+        position: absolute;
+        /* transform: scaleY(2); */
+        background-color: red;
+    }
+    12% {
+        transform: scaleX(1.3);
+    }
+    25% {   
+        top: 30vh;
+        left: 47vw;
+        position: absolute;
+        transform: scaleY(1);
+        background-color: blue;
+    }
+    37% {
+        transform: scaleY(1.3);
+    }
+    50% {
+        top: 60vh;
+        left: 47vw;
+        position: absolute;
+        transform: scaleX(1);
+        background-color: green;
+    }
+    62% {
+        transform: scaleX(1.3);
+    }
+    75% {
+        top: 60vh;
+        left: 27vw;
+        position: absolute;
+        transform: scaleX(1);
+        background-color: yellow;
+    }
+    87% {
+        transform: scaleY(1.3);
+    }
+    100% {
+        top: 30vh;
+        left: 27vw;
+        position: absolute;
+        transform: scaleY(1);
+        background-color: red;
+    }
+}
